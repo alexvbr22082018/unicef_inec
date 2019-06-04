@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Steve’s Xaringan Presentation</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Steven V. Miller" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/robot.css" rel="stylesheet" />
+    <link href="libs/remark-css/tamu-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="stryle.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Steve’s Xaringan Presentation
+## POSC 0000 – It Would Be Cool If This Were an Actual Class Presentation
+### Steven V. Miller<br /> <br /> <br /> <br /> <br /> <br />
+### Department of Political Science
+
+---
+
+
+
+
+
+
+# Install Xaringan First
+
+Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
+
+
+```r
+devtools::install_github("yihui/xaringan")
+```
+
+
+You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
+
+- Create a new R Markdown document from the menu `File -&gt; New File -&gt; R Markdown -&gt; From Template -&gt; Ninja Presentation`;&lt;sup&gt;1&lt;/sup&gt;
+- Click the `Knit` button to compile it.
+
+---
+
+# remark.js Maximizes the Presentation Value
+
+Press `h` or `?` to see  controls you have in remark.js.
+
+Hit `Esc` to exit that screen.
+
+
+
+---
+
+class: center, middle
+
+# You can do this to your slides if you want
+## Add `class: center, middle` to the start of your slide.
+### Perhaps you want the appearance of a secondary title slide, which is what this will do.
+
+For example, check this out...
+
+---
+
+class: center, middle
+
+# Pop Music and Political Science
+## POSC 0000 -- It Would Be Cool If This Were an Actual Class Presentation
+### I am not funny and you will be forgiven for thinking of me as impossibly uncool.
+
+
+
+---
+
+# Sheena Easton and Total Conflict
+
+Sheena Easton describes the following scenario for her baby:
+
+- Takes the morning train
+- Works from nine 'til five
+- Takes another train home again
+- Finds Sheena Easton waiting for him
+
+--
+
+Sheena Easton and her baby are playing a **zero-sum (total conflict)** game.
+
+- Akin to Holmes-Moriarty game (see: von Neumann and Morgenstern), or "matching pennies."
+- Useful for modeling strategic counterterrorism dilemmas between a government and terrorist group.
+
+
+---
+
+# A Total Conflict Between Sheena Easton and Her Baby
+
+|                         | Sheena Easton Stays Home       | Sheena Easton Goes to Baby's Work |
+|-------------------------|---------------------|------------------|
+| **Baby Home Again**          |  -100, **100**         |  **100**, 0       |
+| **Baby Stays at Work**             |   **50**, 0        |  -100, **100**        |
+
+--
+
+&lt;br /&gt;
+
+Notice we have no pure strategies, and no Nash equilibrium.
+
+- Sheena Easton wants to proverbially "match pennies."
+- Her baby has diametrically opposed preferences, fearing for his safety.
+
+Solution: mixed strategy.
+
+---
+background-image: url(https://media.giphy.com/media/dqZSIfquVhSg0/giphy.gif)
+background-position: 50% 50%
+background-size: 100%
+class: center, bottom, fullscale
+
+# Run...
+
+---
+
+# Congressman Astley's Re-election Platform
+
+Assume Congressman Astley presides over a competitive district in which he seeks reappointment. He promises he's:
+
+- Never gonna give you up.
+- Never gonna let you down.
+- Never gonna run around and desert you.
+- Never gonna make you cry.
+- Never gonna say goodbye.
+- Never gonna tell a lie and hurt you.
+
+Are these promises (if credible) sufficient to secure re-election?
+
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

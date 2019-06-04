@@ -1,0 +1,134 @@
+---
+title: "Steve's Xaringan Presentation"
+subtitle: "POSC 0000 -- It Would Be Cool If This Were an Actual Class Presentation"
+author: "Steven V. Miller<br /> <br /> <br /> <br /> <br /> <br />"
+institute: Department of Political Science
+output:
+  xaringan::moon_reader:
+    css: ["default", "stryle.css", "robot","tamu-fonts"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(dev = 'svg')
+options(device = function(file, width, height) {
+  svg(tempfile(), width = width, height = height)
+})
+library(tidyverse)
+# library(stevemisc)
+```
+
+
+
+# Install Xaringan First
+
+Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
+
+```{r eval=FALSE, tidy=FALSE}
+devtools::install_github("yihui/xaringan")
+```
+
+
+You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
+
+- Create a new R Markdown document from the menu `File -> New File -> R Markdown -> From Template -> Ninja Presentation`;<sup>1</sup>
+- Click the `Knit` button to compile it.
+
+---
+
+# remark.js Maximizes the Presentation Value
+
+Press `h` or `?` to see  controls you have in remark.js.
+
+Hit `Esc` to exit that screen.
+
+
+
+---
+
+class: center, middle
+
+# You can do this to your slides if you want
+## Add `class: center, middle` to the start of your slide.
+### Perhaps you want the appearance of a secondary title slide, which is what this will do.
+
+For example, check this out...
+
+---
+
+class: center, middle
+
+# Pop Music and Political Science
+## POSC 0000 -- It Would Be Cool If This Were an Actual Class Presentation
+### I am not funny and you will be forgiven for thinking of me as impossibly uncool.
+
+
+
+---
+
+# Sheena Easton and Total Conflict
+
+Sheena Easton describes the following scenario for her baby:
+
+- Takes the morning train
+- Works from nine 'til five
+- Takes another train home again
+- Finds Sheena Easton waiting for him
+
+--
+
+Sheena Easton and her baby are playing a **zero-sum (total conflict)** game.
+
+- Akin to Holmes-Moriarty game (see: von Neumann and Morgenstern), or "matching pennies."
+- Useful for modeling strategic counterterrorism dilemmas between a government and terrorist group.
+
+
+---
+
+# A Total Conflict Between Sheena Easton and Her Baby
+
+|                         | Sheena Easton Stays Home       | Sheena Easton Goes to Baby's Work |
+|-------------------------|---------------------|------------------|
+| **Baby Home Again**          |  -100, **100**         |  **100**, 0       |
+| **Baby Stays at Work**             |   **50**, 0        |  -100, **100**        |
+
+--
+
+<br />
+
+Notice we have no pure strategies, and no Nash equilibrium.
+
+- Sheena Easton wants to proverbially "match pennies."
+- Her baby has diametrically opposed preferences, fearing for his safety.
+
+Solution: mixed strategy.
+
+---
+background-image: url(https://media.giphy.com/media/dqZSIfquVhSg0/giphy.gif)
+background-position: 50% 50%
+background-size: 100%
+class: center, bottom, fullscale
+
+# Run...
+
+---
+
+# Congressman Astley's Re-election Platform
+
+Assume Congressman Astley presides over a competitive district in which he seeks reappointment. He promises he's:
+
+- Never gonna give you up.
+- Never gonna let you down.
+- Never gonna run around and desert you.
+- Never gonna make you cry.
+- Never gonna say goodbye.
+- Never gonna tell a lie and hurt you.
+
+Are these promises (if credible) sufficient to secure re-election?
+
+---
